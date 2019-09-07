@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <!-- jQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>GIFTASTIC</title>
+</head>
+<body>
+    <container>
+        <!-- TOP BUTTONS -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="buttonClub">
+                    <button onclick="getImages('dog')">dog</button>
+                    <button onclick="getImages('cat')">cat</button>
+                    <button onclick="getImages('rabbit')">rabbit</button>
+                    <button onclick="getImages('hamster')">hamster</button>
+                    <button onclick="getImages('skunk')">skunk</button>
+                    <button onclick="getImages('hotdog')">hotdog</button>
+                    <button onclick="getImages('goldfish')">goldfish</button>
+                    <button onclick="getImages('bird')">bird</button>
+                    <button onclick="getImages('ferret')">ferret</button>
+                    <button onclick="getImages('turtle')">turtle</button>
+                    <button onclick="getImages('sugar glider')">sugar glider</button>
+                    <button onclick="getImages('llama')">llama</button>
+                    <button onclick="getImages('chicken')">chicken</button>
+                    <button onclick="getImages('cow')">cow</button>
+                    <button onclick="getImages('monkey')">monkey</button>
+                    <button onclick="getImages('corndog')">corndog</button>
+                    <button onclick="getImages('caterpillar')">caterpillar</button>
+                    <button onclick="getImages('hedgehog')">hedgehog</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- PICTURE AREA -->
+            <div class="col-md-8">
+                <div id="images"></div>
+            </div>
+            <!-- SUBMITTING AREA -->
+            <div class="col-md-4">
+                <form>
+                    <div class="form-group">
+                        <label for="submitAnimal">Add an Animal</label>
+                        <textarea class="form-control" id="submitAnimal"></textarea>
+                    </div>
+                    <button onclick="addAnimal()" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </container>
+    <!-- JAVASCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
