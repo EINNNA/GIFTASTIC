@@ -16,7 +16,7 @@ function getImages(item) {
           var images = '';
           // for loop was not running
           $.each(response.data, function( index, value ) {
-            var image = '<img src="' + value.images.fixed_height_still.url + '">';
+            var image = '<img src="' + value.images.original.url + '">';
             images = images + image;
           });
           $("#images").html(images);
